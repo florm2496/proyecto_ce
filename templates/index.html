@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+ {% load static %}
+  {% block content %}
+        
+    
+  <div class="hero overlay" style="background-image: radial-gradient(circle at -19.64% 37.72%, #00ffff 0, #00f8ff 16.67%, #2ed5ff 33.33%, #42afd4 50%, #478ba9 66.67%, #446c82 83.33%, #3d5260 100%);">
+        
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-12">
+
+          <div class="row align-items-center justify-content-between">
+
+            <div class="col-lg-5 intro">
+              <h1 class="text-white"><strong>Construyendo juntos</strong> un futuro mejor</h1>
+              <p class="text-white">Construcciones escolares te acompaña</p>
+            </div>
+
+            <div class="col-lg-5" >
+              <form class="book-form" method="POST"> {% csrf_token %}
+                   <!--FORMULARIO DE EMAIL-->
+                <h3>Contactate con nosotros</h3>
+                <div class="row align-items-center">
+                  <div class="mb-3 mb-md-4 col-md-12">
+                    <input type="text" name="asunto" id="id_asunto" class="form-control" placeholder="Asunto">
+                  </div>
+                  <div class="mb-3 mb-md-4 col-md-12">
+                    <input type="email" name="email" id="id_email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="mb-3 mb-md-4 col-md-12">
+                    <input type="text" name="numero" id="id_numero" class="form-control" placeholder="Numero de telefono">
+                  </div>
+                 
+                  <div class="mb-3 mb-md-4 col-md-12">
+                    <textarea name="mensaje" id="id_mensaje" cols="10" rows="4" class="form-control" placeholder="Escriba su mensaje aqui"></textarea>
+                    
+                    <!--
+                      <div class="form-control-wrap">
+                      <input type="text" id="cf-4" placeholder="Select Date" class="form-control datepicker px-3">
+                      <span class="icon icon-date_range"></span>
+                    </div>
+                    -->
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" value="Enviar mensaje" class="btn btn-primary btn-info btn-block py-3">
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!--finaliza la portada -->
+
+
+  
+  {% endblock content %}
+      

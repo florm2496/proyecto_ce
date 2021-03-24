@@ -1,0 +1,169 @@
+{% load  static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construcciones escolares</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'notary-master/fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/bootstrap-datepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/fonts/flaticon/font/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'notary-master/css/style.css' %}">
+
+</head>
+<body>
+
+<div class="site-wrap" id="home-section">
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+ <!--esto es el menu-->
+<header class="site-navbar site-navbar-target" role="banner">
+
+  <div class="container">
+    <div class="row align-items-center position-relative">
+
+      <div class="col-3">
+        <div class="site-logo">
+          <a href=""><img class="logo" src="{% static 'notary-master/images/ce.png' %}" alt=""></a>
+        </div>
+      </div>
+
+      <div class="col-9 text-right text-lg-left">
+        
+        <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
+
+        <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav ml-auto ">
+            <li class="active"><a href="#" class="nav-link">Home</a></li>
+            <li class="has-children">
+              <a href="#" class="active" class="nav-link">Proyectos</a>
+              <ul class="dropdown">
+                <li ><a href="#">Electricos</a></li>
+                <li><a href="#">De estructura</a></li>
+                <li><a href="#">Sanitarias</a></li>
+                <li><a href="#">Mejoras</a></li>
+                <li><a href="#">Inundaciones</a></li>
+                <li><a href="#">Paredes</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#" class="nav-link">Nosotros</a></li>
+            <li class="active"><a href="#" class="nav-link">Escuelas</a></li>
+            <li class="active"><a href="#" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      
+    </div>
+  </div>
+
+</header>
+
+<!--aqui finaliza el menu-->>
+  
+
+{% block content %}
+  
+{% endblock content %}
+ 
+<!--aqui empieza el footer-->
+
+<footer class="site-footer" style="background-image: radial-gradient(circle at 79.88% -14.09%, #00ffff 0, #00ffff 16.67%, #28daff 33.33%, #42afd4 50%, #4786a3 66.67%, #436477 83.33%, #394752 100%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="footer-heading mb-4">Nuestras redes sociales</h2>
+       
+        <ul class="list-unstyled social">
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+          <li><a href="#"><span class="icon-instagram"></span></a></li>
+          <li><a href="#"><span class="icon-twitter"></span></a></li>
+          <li><a href="#"><span class="icon-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 ml-auto">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">Resources</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">Support</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">Company</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!--no tocar a partir de aqui-->
+</div>
+
+<script src="{% static 'notary-master/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'notary-master/js/popper.min.js' %}"></script>
+<script src="{% static 'notary-master/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'notary-master/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'notary-master/js/jquery.sticky.js' %}"></script>
+<script src="{% static 'notary-master/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'notary-master/js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'notary-master/js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'notary-master/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'notary-master/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'notary-master/js/aos.js' %}"></script>
+<script src="{% static 'notary-master/js/main.js' %}"></script>
+
+
+
+
+</body>
+</html>

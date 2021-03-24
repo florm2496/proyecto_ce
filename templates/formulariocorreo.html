@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+    
+{% block content %}
+  
+<h2>enviar correo</h2>
+<form action="#" method="POST">
+    {% csrf_token %}
+
+
+    <input type="text" name="mail" placeholder="email">
+    <input style="font-size: 30px;" type="submit" value="enviar">
+
+
+</form>
+
+{% endblock content %}
+  

@@ -1,0 +1,1 @@
+web: gunicorn dmc.wsgi --log-file -
